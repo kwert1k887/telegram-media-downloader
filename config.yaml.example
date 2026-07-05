@@ -1,0 +1,35 @@
+# account phone number
+account_phone: "+7XXXXXXXXXX"
+
+# app info
+# see https://core.telegram.org/api/obtaining_api_id
+api_id: 0
+api_hash: "your_api_hash_here"
+
+# parse messages delay in seconds
+delay: 5
+
+# the number of messages whose edits in the original channel will be tracked
+edit_message_checker_limit: 10000
+
+# maximum number of messages to download on first run (to avoid flooding)
+# set to 0 to download all available messages
+max_initial_messages: 0
+
+# download path for media files
+download_path: "downloads"
+
+# groups
+groups:
+
+  - name: My Downloads
+    # list of channels, chats or private messages from where you want to download media
+    sources:
+      - "Channel Name"
+
+    # not used in downloader, leave empty
+    destinations: []
+
+    # if not empty, only messages containing these words are downloaded
+    # empty list = download ALL messages with media
+    whitelist: [ ]
